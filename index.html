@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lincoln Silva | Software Developer</title>
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-light bg-gradient">
+    <div class="container">
+      <header
+        class="d-flex flex-column justify-content-center align-items-center mt-5"
+      >
+        <img
+          class="img-fluid rounded-circle shadow-2-strong"
+          alt="imagem de perfil"
+          id="avatar-url"
+          style="max-width: 200px; height: 200px; width: 100%"
+        />
+
+        <h1 class="mb-0 mt-3 text-body" id="name"></h1>
+
+        <p class="text-muted">Software Developer</p>
+
+        <div>
+          <!-- Instagram -->
+          <a
+            class="btn btn-primary btn-floating"
+            style="background-color: #333333"
+            href="https://www.instagram.com/jotalincoln/"
+            target="_blank"
+            role="button"
+            data-mdb-toggle="tooltip"
+            title="Ir para Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+
+          <!-- Linkedin -->
+          <a
+            class="btn btn-primary btn-floating"
+            style="background-color: #333333"
+            href="https://www.linkedin.com/in/lincoln-silva-799157125/"
+            target="_blank"
+            role="button"
+            data-mdb-toggle="tooltip"
+            title="Ir para Linkedin"
+          >
+            <i class="fab fa-linkedin-in"> </i>
+          </a>
+
+          <!-- Github -->
+          <a
+            class="btn btn-primary btn-floating"
+            style="background-color: #333333"
+            href="https://github.com/LincolnSA"
+            target="_blank"
+            role="button"
+            data-mdb-toggle="tooltip"
+            title="Ir para Github"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+
+          <!-- Whatsapp -->
+          <a
+            class="btn btn-primary btn-floating"
+            style="background-color: #333333"
+            href="https://api.whatsapp.com/send?phone=5585991248492&text=Fala%20Lincoln%2C%20tudo%20%C3%B3timo%20cara%3F"
+            target="_blank"
+            role="button"
+            data-mdb-toggle="tooltip"
+            title="Ir para Whatsapp"
+          >
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+      </header>
+
+      <hr class="hr hr-blurry my-5" />
+
+      <main class="d-flex flex-column gap-5">
+        <section>
+          <h2 class="text-body">Oooba</h2>
+          <p>
+            Satisfação em conhecê-lo, atualmente estou desenvolvendo e
+            adquirindo mais conhecimento utilizando a stack composta de ReactJS,
+            React Native e NodeJS baseada no javascript.
+          </p>
+          <p>
+            Diante disso me torno um fã do ecossistema javascript e um mero
+            aprendiz na estrada da vida...
+          </p>
+          <p>Simbora 🚀</p>
+        </section>
+
+        <section>
+          <h2 class="text-body">Se liga nos projetos</h2>
+          <div class="row row-cols-1 row-cols-md-3" id="card-container"></div>
+        </section>
+      </main>
+
+      <hr class="hr hr-blurry my-5" />
+
+      <footer class="text-center position-relative">
+        <a
+          class="btn btn-primary btn-floating position-absolute top-0 end-0"
+          style="background-color: #333333"
+          target="_blank"
+          role="button"
+          type="button"
+          id="scroll-btn"
+          data-mdb-toggle="tooltip"
+          title="Ir para o início"
+        >
+          <i class="fas fa-angle-up"></i>
+        </a>
+
+        <div>
+          <!-- Instagram -->
+          <a
+            class="btn btn-primary btn-floating"
+            style="background-color: #333333"
+            href="https://www.instagram.com/jotalincoln/"
+            target="_blank"
+            role="button"
+            data-mdb-toggle="tooltip"
+            title="Ir para Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+
+          <!-- Linkedin -->
+          <a
+            class="btn btn-primary btn-floating"
+            style="background-color: #333333"
+            href="https://www.linkedin.com/in/lincoln-silva-799157125/"
+            target="_blank"
+            role="button"
+            data-mdb-toggle="tooltip"
+            title="Ir para Linkedin"
+          >
+            <i class="fab fa-linkedin-in"> </i>
+          </a>
+
+          <!-- Github -->
+          <a
+            class="btn btn-primary btn-floating"
+            style="background-color: #333333"
+            href="https://github.com/LincolnSA"
+            target="_blank"
+            role="button"
+            data-mdb-toggle="tooltip"
+            title="Ir para Github"
+            ><i class="fab fa-github"></i>
+          </a>
+
+          <!-- Whatsapp -->
+          <a
+            class="btn btn-primary btn-floating"
+            style="background-color: #333333"
+            href="https://api.whatsapp.com/send?phone=5585991248492&text=Fala%20Lincoln%2C%20tudo%20%C3%B3timo%20cara%3F"
+            target="_blank"
+            role="button"
+            data-mdb-toggle="tooltip"
+            title="Ir para Whatsapp"
+            ><i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+
+        <p class="p-3">Feito com 🖤 por Lincoln Silva</p>
+      </footer>
+    </div>
+
+    <!-- My scrips -->
+    <script src="./script.js"></script>
+
+    <!-- MDB -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"
+    ></script>
+  </body>
+</html>
