@@ -21,7 +21,18 @@
     />
   </head>
   <body class="bg-light bg-gradient">
-    <div class="container">
+    <!-- Spinner -->
+    <div
+      class="vh-100 d-flex justify-content-center align-items-center"
+      id="spinner"
+    >
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="container d-none" id="content">
       <header
         class="d-flex flex-column justify-content-center align-items-center mt-5"
       >

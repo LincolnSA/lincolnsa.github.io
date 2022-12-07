@@ -47,16 +47,19 @@ const listRepositories = async (reposUrl) => {
 const main = async () => {
   const response = await fetch(GITHUB_URL);
   const { name, avatar_url, repos_url } = await response.json();
-
-  const nameApp = document.querySelector("#name");
-  const avatarUlApp = document.querySelector("#avatar-url");
-
-  nameApp.innerHTML = name;
-  avatarUlApp.src = avatar_url;
-
   const repositories = await listRepositories(repos_url);
 
   renderCards(repositories);
+
+  const nameApp = document.querySelector("#name");
+  const avatarUlApp = document.querySelector("#avatar-url");
+  const spinner = document.querySelector("#spinner");
+  const content = document.querySelector("#content");
+
+  nameApp.innerHTML = name;
+  avatarUlApp.src = avatar_url;
+  spinner.classList.add("d-none");
+  content.classList.remove("d-none");
 };
 
 main();
